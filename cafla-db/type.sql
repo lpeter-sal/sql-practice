@@ -1,4 +1,5 @@
 
+
 INSERT INTO "type" ( league_id, "level", fees, ref_position, created_at, updated_at )
 VALUES
 	( 1, '11v11', 8, 'Referee', CURRENT_DATE, CURRENT_DATE ),
@@ -21,4 +22,15 @@ VALUES
 SELECT * FROM type;
 
 
--- * Falta meter data a las tablas REFEREE, REFEREE_MATCH, BALANCE_HISTORY Y NOTIFICATION_HISTORY.
+-- * Table Structure
+-- * Table Name: match_type
+-- * 1. ID - Primary Key - Unique Identifier for each type
+-- * 2. League ID - Foreign Key - League Identifier
+-- * 3. Division - Division of the league (e.g., Premier, Championship, etc.)
+-- * 3. Level - Level of the game (11v11, 7v7, etc.)
+-- * 4. Fees - Fees for the game
+-- * 5. Referee Position - Position of the referee (Referee, Assistant Referee, etc.)
+-- * 6. Created At - Date of creation of the type
+-- * 7. Updated At - Date of last update of the type
+
+

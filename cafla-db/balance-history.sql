@@ -14,3 +14,14 @@ SELECT * FROM balance_history;
 -- * SACAR LA SUMA TOTAL DE CUANTO DEBE UN REFEREEE
 SELECT SUM(amount), referee_id FROM balance_history
 GROUP BY referee_id;
+
+-- ** Table Structure **
+-- * Table Name: balance_history 
+-- * 1. ID - Primary Key - Unique Identifier for each payment
+-- * 2. Referee ID - Foreign Key - Referee Identifier
+-- * 3. Match ID - Foreign Key - Match Identifier
+-- * 4. Amount - Amount of money
+-- * 5. Payment Type (debit, credit) - Type of payment
+-- * 6. Note - Description of the payment
+-- * 7. Created At - Date of the payment
+-- * 8. Authorized By - User who authorized the payment
